@@ -1,2 +1,5 @@
-#sudo yum install sqlcmd
-sudo apt install sqlcmd
+if [ $(which brew) ]; then
+brew install sqlcmd
+else
+	echo "brew required to install sqlcmd"
+fi
